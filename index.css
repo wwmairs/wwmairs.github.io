@@ -4,43 +4,70 @@ body {
   font-weight: 100;
 }
 
+
+
 h1 {
   text-align: center;
   font-style: italic;
   font-size: 80px;
   font-weight: 100;
+  color: black;
   letter-spacing: 18px;
   word-spacing: 35px;
+  cursor: default;
 }
 
-a {
-  font-size: 40px;
-  width: 100%;
-  height: 100%;
+ul {
+  list-style-type: none;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 30%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 100;
+  padding: 40px 60px;
   display: block;
+  text-decoration: none;
+  border-bottom: 1px solid silver;
 }
 
-a:link {
+li a:link {
+  background-color: silver;
+  color: white;
+}
+
+li a:visited {
+  background-color: silver;
+  color: white;
+}
+
+li a.left:hover {
+  border-left: 1px solid silver;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
   background-color: white;
   color: grey;
-  text-decoration: none;
+  cursor: default;
 }
 
-a:visited {
+li a.right:hover {
+  border-right: 1px solid silver;
+  border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
   background-color: white;
   color: grey;
-  text-decoration: none;
+  cursor: default;
 }
 
-a:hover {
+li a:active {
   background-color: grey;
   color: white;
-  text-decoration: none;
-}
-
-a:active {
-  background-color: cyan;
-  color: white;
-  text-decoration: none;
 }
 
