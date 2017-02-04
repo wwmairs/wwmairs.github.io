@@ -22,7 +22,7 @@ h1 {
   cursor: default;
 }
 
-
+/* formatting of navigation bar */
 ul {
   list-style-type: none;
   position: fixed;

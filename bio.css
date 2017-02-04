@@ -9,3 +9,58 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
+
+
+/* formatting of navigation bar */
+ul {
+  list-style-type: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #80B2B2;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 30px;
+  font-weight: 100;
+  display: inline;
+  text-decoration: none;
+
+}
+
+li.home {
+  float: right;
+}
+
+
+li a:link {
+  background-color: #80B2B2;
+  color: black;
+}
+
+li a:visited {
+  background-color: #80B2B2;
+  color: black;
+}
+
+li a:hover {
+  background-color: #ffffcc;
+  color: black;
+  cursor: default;
+}
+
+
+li a:active {
+  background-color: #80B2B2;
+  color: black;
+}
