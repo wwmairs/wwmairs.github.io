@@ -1,10 +1,15 @@
+/* index.css
+ * stylesheet for index.html
+ */
+
 body {
   font-family: "Helvetica";
   font-size: 18px;
   font-weight: 100;
+  background: linear-gradient(to bottom, #006699 0%, #ffffcc 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
-
-
 
 h1 {
   text-align: center;
@@ -17,11 +22,16 @@ h1 {
   cursor: default;
 }
 
+
 ul {
   list-style-type: none;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  margin-left: 30%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #80B2B2;
 }
 
 li {
@@ -30,44 +40,39 @@ li {
 
 li a {
   text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
   font-size: 30px;
   font-weight: 100;
-  padding: 40px 60px;
-  display: block;
+  display: inline;
   text-decoration: none;
-  border-bottom: 1px solid silver;
+
 }
 
+li.home {
+  float: right;
+}
+
+
 li a:link {
-  background-color: silver;
-  color: white;
+  background-color: #80B2B2;
+  color: black;
 }
 
 li a:visited {
-  background-color: silver;
-  color: white;
+  background-color: #80B2B2;
+  color: black;
 }
 
-li a.left:hover {
-  border-left: 1px solid silver;
-  border-top: 1px solid silver;
-  border-bottom: 1px solid silver;
-  background-color: white;
-  color: grey;
+li a:hover {
+  background-color: #ffffcc;
+  color: black;
   cursor: default;
 }
 
-li a.right:hover {
-  border-right: 1px solid silver;
-  border-top: 1px solid silver;
-  border-bottom: 1px solid silver;
-  background-color: white;
-  color: grey;
-  cursor: default;
-}
 
 li a:active {
-  background-color: grey;
-  color: white;
+  background-color: #80B2B2;
+  color: black;
 }
 
