@@ -1,18 +1,35 @@
-<!-- bio.css -->
+/* bio.css*/
 
 
 body {
-  font-family: "Helvetica";
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  font-weight: 100;
   background: linear-gradient(to bottom, #006699 0%, #ffffcc 100%);
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
+  height: 2000px;
 }
 
+h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 80px;
+  font-weight: 100;
+  letter-spacing: 18px;
+  word-spacing: 35px;
+  color: #ffffcc;
+}
+
+div {
+  margin: auto;
+  width: 75%;
+  height: 20%;
+  padding: 10px;
+  outline: 1px solid #ffffcc;
+}
 
 /* formatting of navigation bar */
-ul {
+ul.navbar {
   list-style-type: none;
   position: fixed;
   bottom: 0;
@@ -23,11 +40,11 @@ ul {
   background-color: #80B2B2;
 }
 
-li {
+ul.navbar li {
   float: left;
 }
 
-li a {
+ul.navbar li a {
   text-align: center;
   padding-right: 10px;
   padding-left: 10px;
@@ -38,29 +55,33 @@ li a {
 
 }
 
-li.home {
+ul.navbar li.home {
   float: right;
 }
 
 
-li a:link {
+ul.navbar li a:link {
   background-color: #80B2B2;
   color: black;
 }
 
-li a:visited {
+ul.navbar li a:visited {
   background-color: #80B2B2;
   color: black;
 }
 
-li a:hover {
+ul.navbar li a:hover {
   background-color: #ffffcc;
   color: black;
   cursor: default;
 }
 
 
-li a:active {
-  background-color: #80B2B2;
+ul.navbar li a:active {
+  background-color: #ffb366;
   color: black;
+}
+
+ul.navbar li a.curr {
+  background-color: #ffffcc;
 }

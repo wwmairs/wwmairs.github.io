@@ -3,12 +3,12 @@
  */
 
 body {
-  font-family: "Helvetica";
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  font-weight: 100;
   background: linear-gradient(to bottom, #006699 0%, #ffffcc 100%);
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
+  height: 2000px;
 }
 
 h1 {
@@ -16,63 +16,74 @@ h1 {
   font-style: italic;
   font-size: 80px;
   font-weight: 100;
-  color: black;
+  color: #ffffcc;
   letter-spacing: 18px;
   word-spacing: 35px;
   cursor: default;
 }
 
-/* formatting of navigation bar */
+div{
+  margin: auto;
+  width: 50%;
+  height: 85%;
+  padding: 10px;
+  border: 1px solid #ffffcc;
+}
+
+
 ul {
   list-style-type: none;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  margin: 0;
   padding: 0;
+  
+}
+
+ul li {
+  margin: auto;
+  width: 175px;
+  padding: 10px;
+}
+
+ul li a {
+  margin: auto;
   width: 100%;
-  background-color: #80B2B2;
-}
-
-li {
-  float: left;
-}
-
-li a {
+  height: 50%;
+  letter-spacing: 5px;
   text-align: center;
-  padding-right: 10px;
-  padding-left: 10px;
+  font-style: italic;
   font-size: 30px;
   font-weight: 100;
-  display: inline;
+  display: block;
   text-decoration: none;
 
 }
 
-li.home {
-  float: right;
-}
 
-
-li a:link {
+ul li a:link {
   background-color: #80B2B2;
   color: black;
 }
 
-li a:visited {
+ul li a:visited {
   background-color: #80B2B2;
   color: black;
 }
 
-li a:hover {
+ul li a:hover {
   background-color: #ffffcc;
   color: black;
   cursor: default;
 }
 
 
-li a:active {
+ul li a:active {
   background-color: #80B2B2;
   color: black;
 }
 
+footer {
+  color: #006699;
+  text-align: center;
+  font-size: 12px;
+  position: relative;
+  bottom: -25px;
+}

@@ -1,12 +1,19 @@
 body {
-  font-family: "Helvetica";
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
-  font-weight: 100;
+  letter-spacing: 2px;
   background: linear-gradient(to bottom, #006699 0%, #ffffcc 100%);
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
+  height: 2000px;
 }
 
+div {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  outline: 1px solid #ffffcc;
+}
 
 h1 {
   text-align: center;
@@ -15,18 +22,32 @@ h1 {
   font-weight: 100;
   letter-spacing: 18px;
   word-spacing: 35px;
+  color: #ffffcc;
 }
 
 h2 {
+  text-align: center;
+  font-style: italic;
   font-weight: 100;
+  letter-spacing: 10px;
 }
 
 h3 {
+  text-align: center;
   font-weight: 100;
+
+}
+
+p {
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  border-left: 1px solid black;
+  line-height: 27px;
 }
 
 /* formatting of navigation bar */
-ul {
+ul.navbar {
   list-style-type: none;
   position: fixed;
   bottom: 0;
@@ -37,11 +58,11 @@ ul {
   background-color: #80B2B2;
 }
 
-li {
+ul.navbar li {
   float: left;
 }
 
-li a {
+ul.navbar li a {
   text-align: center;
   padding-right: 10px;
   padding-left: 10px;
@@ -52,29 +73,33 @@ li a {
 
 }
 
-li.home {
+ul.navbar li.home {
   float: right;
 }
 
 
-li a:link {
+ul.navbar li a:link {
   background-color: #80B2B2;
   color: black;
 }
 
-li a:visited {
+ul.navbar li a:visited {
   background-color: #80B2B2;
   color: black;
 }
 
-li a:hover {
+ul.navbar li a:hover {
   background-color: #ffffcc;
   color: black;
   cursor: default;
 }
 
 
-li a:active {
-  background-color: #80B2B2;
+ul.navbar li a:active {
+  background-color: #ffb366;
   color: black;
+}
+
+ul.navbar li a.curr {
+  background-color: #ffffcc;
 }
