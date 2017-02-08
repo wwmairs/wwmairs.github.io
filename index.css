@@ -22,14 +22,17 @@ h1 {
   cursor: default;
 }
 
-div{
+div {
   margin: auto;
-  width: 50%;
+  width: 600px;
   height: 85%;
-  padding: 10px;
-  border: 1px solid #ffffcc;
+  border-top: 1px solid #ffffcc;
+  border-right: 1px solid #ffffcc;
+  border-left: 1px solid #ffffcc;
 }
 
+img {
+}
 
 ul {
   list-style-type: none;
