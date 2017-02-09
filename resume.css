@@ -30,11 +30,13 @@ h2 {
   font-style: italic;
   font-weight: 100;
   letter-spacing: 10px;
+  color: #ffffcc;
 }
 
 h3 {
   text-align: center;
   font-weight: 100;
+  color: #ffffcc;
 
 }
 
@@ -42,8 +44,9 @@ p {
   text-align: center;
   margin: auto;
   width: 200px;
-  border-left: 1px solid black;
+  border-left: 1px solid #ffffcc;
   line-height: 27px;
+  color: #ffffcc;
 }
 
 /* formatting of navigation bar */

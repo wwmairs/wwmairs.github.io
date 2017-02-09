@@ -4,10 +4,12 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+  letter-spacing: 2px;
   background: linear-gradient(to bottom, #006699 0%, #ffffcc 100%);
   background-attachment: scroll;
   background-repeat: no-repeat;
   height: 2000px;
+  margin: 0;
 }
 
 h1 {
@@ -20,13 +22,55 @@ h1 {
   color: #ffffcc;
 }
 
+h2 {
+  color: #ffffcc;
+  text-align: center;
+  font-style: italic;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+}
+
+p {
+  color: #ffffcc;
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+p a:link {
+  text-decoration: none;
+  color: #ffffcc;
+}
+
+p a:visited {
+  text-decoration: none;
+  color: #ffffcc;
+
+}
+
+p a:hover {
+  text-decoration: none;
+  color: #006699;
+  background-color: #ffffcc;
+
+}
+
+p a:active {
+  text-decoration: none;
+  color: #ffffcc;
+
+}
+
 div {
   margin: auto;
+  margin-bottom: 100px;
   width: 75%;
-  height: 20%;
+  height: 250px;
   padding: 10px;
   outline: 1px solid #ffffcc;
 }
+
 
 /* formatting of navigation bar */
 ul.navbar {
